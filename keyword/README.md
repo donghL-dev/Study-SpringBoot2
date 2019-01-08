@@ -10,7 +10,7 @@
     public class A {	
       public A() {
         B b = new B();
-	      C c = new C();
+	    C c = new C();
       }
     }
     ```
