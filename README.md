@@ -10,3 +10,16 @@ Study-Spring Boot 2
   | **OS** | Windows 10(64-bit), Mac OS  | 
   |  **IDE**  | IntelliJ IDEA  |
   |  **JDK**  | JDK 8          | 
+<br>
+
+### Study-Day-1 
+  * application.yml 생성 및 test property 값 추가 
+  * @Value 어노테이션 테스트
+  * @ConfigurationProperties 어노테이션 테스트
+<br>
+
+### Study-Day-2
+  * 자동 환경 설정 어노테이션 살펴보기
+  * H2 Console 자동 설정 적용해보기
+  * @SpringBootTest 어노테이션 테스트 및 실습
+  * @WebMVCTest 어노테이션 테스트 및 실습 
