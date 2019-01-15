@@ -25,4 +25,4 @@ spring:
         console:
             enabled: true
 
-
+spring.test.database.replace: NONE

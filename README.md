@@ -25,3 +25,18 @@ Study-Spring Boot 2
   * H2 Console 자동 설정 적용해보기
   * @SpringBootTest 어노테이션 테스트 및 실습
   * @WebMVCTest 어노테이션 테스트 및 실습 
+<br>
+
+### Study-Day-3
+  * @DataJpaTest 어노테이션 테스트 및 실습
+  * @RestCilentTest 어노테이션 테스트 및 실습
+  * @JsonTest 어노테이션 테스츠 및 실습
+  * 커뮤니티 게시판 설계
+  * 커뮤니티 게시판 프로젝트 'Spring-Boot-Community-Web' 생성
+    * 프로젝트 의존 라이브러리 6개 구성
+      * Web, Thymeleaf, JPA, DevTools, lombook, H2
+  * 도메인 매핑 및 도메인 테스트하기
+    * 도메인 매핑 : JPA를 사용하여 DB와 도메인 클래스를 연결시켜주는 작업
+<br>
+
+
