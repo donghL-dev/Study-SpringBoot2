@@ -223,9 +223,9 @@
 ## Ch. 4
 ### [MVC 패턴](https://github.com/ber01/Study-Spring-Boot/tree/master/keyword/MVC)
 
-### Thymeleaf
+### [Thymeleaf](https://github.com/rhkd4560/Study-SpringBoot/tree/master/Spring%204day/homework)
 
-### Template, Template Engine
+### [Template](https://github.com/rhkd4560/Study-SpringBoot/tree/master/Spring%204day/homework), [Template Engine](https://github.com/rhkd4560/Study-SpringBoot/tree/master/Spring%204day/homework)
 
 ### [의존 라이브러리](https://github.com/dongh9508/Study-SpringBoot2/tree/master/keyword/LINK/dependency%20library)
   * Web
