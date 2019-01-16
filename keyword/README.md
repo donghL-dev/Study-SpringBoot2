@@ -227,7 +227,7 @@
 
 ### Template, Template Engine
 
-### [의존 라이브러리](https://github.com/dongh9508/Study-SpringBoot2/tree/master/keyword/LINK/dependency-library)
+### [의존 라이브러리](https://github.com/dongh9508/Study-SpringBoot2/tree/master/keyword/LINK/dependency%20library)
   * Web
 
   * Thymeleaf
