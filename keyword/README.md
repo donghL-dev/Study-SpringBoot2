@@ -246,4 +246,14 @@
   * @Id
   * @Column
   * @Builder
+
+### [각종 어노테이션 모음2]()
+  * Pageable
+  
+  * @Service
+  * @Controller
+  * @RequestMapping
+  * @PageableParam
+  * @PageableDefault
+  * @Bean
 ---

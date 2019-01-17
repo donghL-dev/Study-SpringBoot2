@@ -5,6 +5,14 @@ Study-Spring Boot 2
 * 위 책의 특징으로는 커뮤니티 게시판을 구현하며 배울 수 있도록 예제 중심으로 구성되어 있습니다.
 * 2019 겨울방학 **Spring Boot 2 Study**
   * 인원 : [민경환](https://github.com/ber01/Study-Spring-Boot), [박동현](https://github.com/pdh6547/study-spring-boot), [신무곤](https://github.com/mkshin96/study-spring-boot), [신재홍](https://github.com/woghd9072/study-spring-boot), [양기석](https://github.com/yks095/study-spring-boot), [엄태균](https://github.com/etg6550/2019WinterProject), [임동훈](https://github.com/dongh9508/Study-SpringBoot2), [최광민](https://github.com/rhkd4560/Study-SpringBoot), [하상엽](https://github.com/hagome0/Study-Spring-Boot)
+
+  * 스터디 진행 **방향** 및 **목적**
+    
+    * 스프링 부트의 기본 개념을 이해하고 커뮤니티 게시판 구축
+
+    * 참여 인원 모두가 개인 프로젝트 진행
+    * 용어 정리 및 공유, 소스코드 피드백 
+
 * 스터디를 진행하며 모르는 용어는 [Keyword](https://github.com/dongh9508/Study-SpringBoot2/tree/master/keyword)에 정리하면서 진행하고 있습니다.
 * 개발환경
 
