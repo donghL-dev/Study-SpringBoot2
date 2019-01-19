@@ -62,6 +62,39 @@ Study-Spring Boot 2
   
   * CommandLineRunner를 사용하여 DB에 데이터 넣기.
 
-  * 게시판 리스트 기능 만들기
+  * 게시판 리스트 기능과 페이징 처리 및 등록 폼 생성(**Thymeleaf** 활용)
+  * H2-console 확인
+    ```
+    application.properties
 
-  * 페이징 처리 및 작성 폼 만들기
+    spring.thymeleaf.cache=false
+
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.generate-ddl=true
+    spring.jpa.show-sql=true
+
+    spring.h2.console.enabled=true
+
+    logging.level.org.hibernate=info
+    logging.level.org.springframework.web=info
+    
+    url : http://localhost:8080/h2-console/
+    ```
+
+### Study-Day-6
+
+  * 스프링 부트 시큐리티, OAuth2 개념 이해하기.
+
+  * OAuth2의 제공하는 4가지 승인 타입 중 **권한 부여 승인 코드 타입** 이해 및 적용.
+
+    * 소셜 미디어 타입 정보를 나타내는 SocialType enum 객체 생성.
+
+    * User 클래스에 인증을 위한 principal(키값), socialType(인증여부) 컬럼 추가.
+
+  * 스프링 부트 시큐리티 + OAuth2 의존성 설정.
+  
+  * OAuth2를 사용하기 위한 페이스북, 구글, 카카오 개발자 센터 연동.
+
+    * 클라이언트 ID 및 클라이언트 Secret 발급.
+
+  * SNS 프로퍼티 설정 및 바인딩
