@@ -97,4 +97,17 @@ Study-Spring Boot 2
 
     * 클라이언트 ID 및 클라이언트 Secret 발급.
 
+
+### Study-Day-7
+
+  * 스프링 부트 1.5.14 버전 다운 그레이드
+
   * SNS 프로퍼티 설정 및 바인딩
+
+    * ClientResources 클래스 생성
+
+  * 시큐리티와 OAuth2 설정
+
+    * SecurityConfig 클래스 생성.
+
+    * UserTokenService 클래스 생성.

@@ -252,7 +252,7 @@
   * @Column
   * @Builder
 
-### [각종 어노테이션 모음2]()
+### [각종 어노테이션 모음2](https://github.com/ber01/Study-Spring-Boot/tree/master/keyword/Annotation2)
   * Pageable
   
   * @Service
@@ -304,4 +304,52 @@
 
   * 리로스 접근을 위한 사용자 명과 비밀번호, 권한 서버에 요청해서 받은 권한 코드를 함께 활용하여<br> 리소스에 대한 액세스 토큰을 받으면 이를 인증에 이용하는 방식이다.
 
+### [각종 어노테이션 및 인터페이스]()
+
+  * @NestedConfigurationProperty
+
+  * AuthorizationCodeResourceDetails
+
+  * ResourceServerProperties
+
+  * OAuth2 리소스 값
+
+  * @Configuration
+
+  * 동기, 비동기 통신
+
+### [각종 어노테이션 및 인터페이스2]()
+  
+  * @EnableWebSecurity
+
+  * WebSecurityConfigurerAdapter
+
+  * HttpServletRequest
+
+  * XFrameOptionsHeaderWriter
+
+  * CharacterEncodingFilter
+
+  * CsrfFilter
+
+### [각종 어노테이션 및 인터페이스3]()
+
+  * @EnableOAuth2Client
+
+  * OAuth2ClientContext
+
+  * BasicAuthenticationFilter
+
+  * FilterRegistrationBean
+
+  * Filter
+
+  * CompositeFilter
+
+  * OAuth2ClientAuthenticationProcessingFilter
+  
+  * OAuth2RestTemplate
+  
+  * UserInfoTokenService
+ 
 ---
