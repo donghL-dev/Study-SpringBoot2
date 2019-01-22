@@ -12,11 +12,11 @@ public class ClientResources {
     @NestedConfigurationProperty
     private ResourceServerProperties resource = new ResourceServerProperties();
 
-    public AuthorizationCodeResourceDetails getClient() {
+    public AuthorizationCodeResourceDetails getClient(){
         return client;
     }
 
-    public ResourceServerProperties getResource() {
+    public ResourceServerProperties getResource(){
         return resource;
     }
 }

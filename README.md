@@ -111,3 +111,17 @@ Study-Spring Boot 2
     * SecurityConfig 클래스 생성.
 
     * UserTokenService 클래스 생성.
+
+### Study-Day-8
+
+  * 어노테이션 기반으로 User 정보 불러오기.
+
+    * LoginController 클래스 생성
+
+    * UserArgumentResolver 클래스 생성
+
+    * WebApplication 클래스에 UserArgumentResolver 등록
+
+    * SocialUser 어노테이션 생성
+
+  * 인증 권한 확인 및 페이지 권한 분리
