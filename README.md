@@ -125,3 +125,25 @@ Study-Spring Boot 2
     * SocialUser 어노테이션 생성
 
   * 인증 권한 확인 및 페이지 권한 분리
+
+### Study-Day-8
+
+  * 챕터 5가 이해가 가지 않는 부분이 있어서 처음부터 진행
+
+    * 소셜 미디어 타입 정보를 나타내는 enum 객체 생성
+
+      * Facebook, Google, Kakao
+
+    * User 클래스에 socialType, principal 컬럼 추가.
+
+      * socialType : 어떤 소셜 미디어로 인증 받았는지 여부를 나타냄.
+
+      * principal : OAuth2 인증으로 제공받는 키 값.
+
+    * 소셜 미디어 리소스 정보 추가
+
+    * 소셜 미디어 리소스 프로퍼티를 객체로 매핑하는 ClientResoucre 클래스 생성
+
+    * 각 소셜 미디어의 프로퍼티 값을 호출하는 SecurityConfig 클래스 생성 후 Bean 등록
+
+    * 시큐리티 설정을 위한 SecurityConfig 클래스 수정
