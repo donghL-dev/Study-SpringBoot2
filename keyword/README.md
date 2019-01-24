@@ -382,7 +382,7 @@
 
   * 동기, 비동기 통신
 
-### [각종 어노테이션 및 인터페이스2]()
+### [각종 어노테이션 및 인터페이스2](https://github.com/hagome0/Study-Spring-Boot/tree/master/keyword/Annotaion%20and%20Interface2)
   
   * @EnableWebSecurity
 

@@ -30,7 +30,8 @@ import static com.web.domain.enums.SocialType.*;
 
 @Configuration
 @EnableWebSecurity
-@EnableOAuth2Client
+@EnableOAuth2Client // @EnableOAuth2Client을 사용하면 빈을 두 개 생성해야 한다. 그 중 첫번째 빈을 생성하는 방법이 oauth2ClientFilterRegistration 메소드이고 두번째 방법은
+//  OAuth2RestTemplate template = new OAuth2RestTemplate(client.getClient(), oAuth2ClientContext); 여기서 한다.
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -69,16 +70,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public FilterRegistrationBean oauth2ClientFilterRegistration(
-            OAuth2ClientContextFilter filter ){
+    public FilterRegistrationBean oauth2ClientFilterRegistration(OAuth2ClientContextFilter filter) {
         FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(filter);
         registration.setOrder(-100);
         return registration;
     }
 
-    private Filter oauth2Filter() {
-        CompositeFilter filter = new CompositeFilter();
+    private Filter oauth2Filter() { // OAuth2 로그인 관련 필터
+        CompositeFilter filter = new CompositeFilter(); // CompositeFilter는 복합 필터(FACEBOOK, GOOGLE, KAKAO) 생성을 위한 것.
         List<Filter> filters = new ArrayList<>();
         filters.add(oauth2Filter(facebook(), "/login/facebook", FACEBOOK));
         filters.add(oauth2Filter(google(), "/login/google", GOOGLE));
@@ -93,6 +93,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         OAuth2RestTemplate template = new OAuth2RestTemplate(client.getClient(), oAuth2ClientContext);
         filter.setRestTemplate(template);
         filter.setTokenServices(new UserTokenService(client, socialType));
+        filter.setAuthenticationSuccessHandler((request, response, authentication)
+                -> response.sendRedirect("/" + socialType.getValue() + "/complete"));
         filter.setAuthenticationFailureHandler(((request, response, exception) ->
                 response.sendRedirect("/error")));
         return filter;
