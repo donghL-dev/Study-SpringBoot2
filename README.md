@@ -150,7 +150,7 @@ Study-Spring Boot 2
 
 ### Study-Day-10
 
-  *  OAuth2 설정을 위한 SecurityConfig 클래스 수정
+  * OAuth2 설정을 위한 SecurityConfig 클래스 수정
 
     * OAuth2를 사용하기 위해 @EnableOAuth2Client 어노테이션 추가
 
