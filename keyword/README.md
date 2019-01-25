@@ -245,6 +245,20 @@
 ## Ch. 4
 ### [MVC 패턴](https://github.com/ber01/Study-Spring-Boot/tree/master/keyword/MVC)
 
+  * MVC 패턴에 Service가 필요한 이유
+
+    * Service에서 실제 요청에 필요한 비즈니스 로직을 구현하기 때문에 Service가 없을 경우, Controller에서 비즈니스 로직을 구현해야 한다. 
+    
+    * Service가 없을 때, 컨트롤러에 요청이 왔을 때 각 요청에 따른 비즈니스 로직을 구현한 Controller들이 응답해줘야 한다.
+
+      * 하나의 컨트롤러에 모든 요청에 따른 비즈니스 로직을 모두 구현할 경우, Controller와 애플리케이션이 상당히 복잡해진다.
+
+        * 그리하여, 연관성이 있는 여러개의 컨트롤러로 분리되어 처리되어야 한다. 이렇게 되면 컨트롤러가 상당히 많아질 수 있다.
+    
+    * 이렇게 될 경우, 여러 Controller에서 공통으로 사용되는 로직이 생기게 되고, 애플리케이션이 쉽게 복잡해진다.
+    
+    * 그렇기 때문에 요청을 Controller에서 받고 요청에 필요한 비즈니스 로직은 Service에서 담당하는 것이 더 효율적이며 깔끔한 애플리케이션이 될 수 있다. 
+
 ### [Thymeleaf](https://github.com/rhkd4560/Study-SpringBoot/tree/master/Spring%204day/homework)
 
 ### [Template](https://github.com/rhkd4560/Study-SpringBoot/tree/master/Spring%204day/homework), [Template Engine](https://github.com/rhkd4560/Study-SpringBoot/tree/master/Spring%204day/homework)
