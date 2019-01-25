@@ -301,7 +301,7 @@
 
     * 예를 들면, A는 VIP 회원이고 B는 일반 회원이라면 두 회원의 권한이 다르게 부여된다.
   
-### OAuth2
+### [OAuth2](https://github.com/ber01/Study-Spring-Boot/tree/master/keyword/OAuth2)
 
   * OAuth2에 앞서 OAuth는 토큰을 사용한 범용적인 방법의 인증을 제공하는 표준 인증 프로토콜이다.
 
@@ -367,6 +367,7 @@
   
   * 액세스 토큰으로 인해서 리소스 서버는 여러 가지 인증 방식에 각각 대응 하지 않아도 권한을 확인 할 수 있게 된다.
 
+### [p136 ~ p137 코드 정리](https://github.com/ber01/Study-Spring-Boot/tree/master/keyword/p136)
 
 ### [각종 어노테이션 및 인터페이스](https://github.com/pdh6547/study-spring-boot/blob/master/Keyword/Homework/Annotaion%20and%20Interface.md)
 

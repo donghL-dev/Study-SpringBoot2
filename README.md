@@ -147,3 +147,40 @@ Study-Spring Boot 2
     * 각 소셜 미디어의 프로퍼티 값을 호출하는 SecurityConfig 클래스 생성 후 Bean 등록
 
     * 시큐리티 설정을 위한 SecurityConfig 클래스 수정
+
+### Study-Day-10
+
+  *  OAuth2 설정을 위한 SecurityConfig 클래스 수정
+
+    * OAuth2를 사용하기 위해 @EnableOAuth2Client 어노테이션 추가
+
+      * @EnableOAuth2Client를 사용함으로써 두 개의 빈을 생성해야 한다.
+      
+        * 현재 요청과 컨텍스트를 저장하는 필터 빈과 AccessTokenRequest 타입 빈 생성
+
+    * 액세스 토큰 및 권한 서버의 응답값을 받기 위한 OAuth2ClientContext 객체 생성
+
+    * 현재 요청과 컨텍스트를 저장하는 필터인 oauth2ClientFilterRegistration 메소드 생성
+
+    * 소셜 미디어 로그인 관련 필터인 oauth2Filter() 메소드 생성
+
+### Study-Day-11
+
+  * 스프링 부트 2.0 버전으로 의존성 업그레이드
+
+    *  build.gradle 업데이트
+  
+  * 스프링 부트 2.0 방식의 OAuth2 인증 재설정
+
+    * application.yml 내용 수정 및 업데이트
+
+    * 카카오 정보를 담은 CustomOAuth2Provider 클래스 생성.
+
+    * 변경된 시큐리티 + OAuth2 설정을 위한 SecurityConfig 클래스 대폭 수정.
+
+    * 요청 서공시 URI 변경을 위한 LoginController 클래스 수정
+
+    * 요청 스크립트 코드 변경을 위한 login.html 수정
+
+    * UserArgumentResolver 클래스에 User 정보를 받아오는 부분 추가.
+    
