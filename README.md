@@ -183,4 +183,22 @@ Study-Spring Boot 2
     * 요청 스크립트 코드 변경을 위한 login.html 수정
 
     * UserArgumentResolver 클래스에 User 정보를 받아오는 부분 추가.
+
+### Study-Day-12
+
+  * CHAPTER 6 진입.
+
+  * REST와 RESTful에 대해 알아보기.
+
+    * REST와 RESTful의 개념에 대한 이해
+
+    * RESTful의 제약 조건에 대한 이해
+
+  * REST API 설계에 대한 이해
+
+  * REST API 설계의 두가지 방법
+
+    * MVC 패턴을 활용하는 방법
+
+    * 스프링 부트 데이터 레스트를 활용하는 방법
     
