@@ -201,4 +201,23 @@ Study-Spring Boot 2
     * MVC 패턴을 활용하는 방법
 
     * 스프링 부트 데이터 레스트를 활용하는 방법
-    
+
+### Study-Day-13
+
+  * 스프링 부트 MVC 패턴으로 REST API 구현하기.
+
+    * 커뮤니티 게시판의 form.html에 Ajax 통신용 스크립트 코드 추가.
+
+    * 커뮤니티 게시판 프로젝트에 MySQL을 연동하기 위한 런타임 의존성 추가.
+
+    * 커뮤니티 게시판 프로젝트의 application.yml에 MySQL 연동을 위한 설정하기.
+
+    * Spring-Boot-Community-Rest 프로젝트 생성
+
+      * rest-web 모듈과 data-rest 모듈 생성.
+
+      * rest-web 모듈에 MVC 패턴을 활용하는 REST API를 구현하기 위해 코드 추가.
+
+        * rest-web 디렉터리 구조 맞추기.
+
+        * BoardType, SocialType, Board, User, BoardRepository, UserRepository, BoardRestController, RestWebApplication 클래스 생성.
