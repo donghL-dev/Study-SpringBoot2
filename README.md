@@ -216,8 +216,110 @@ Study-Spring Boot 2
 
       * rest-web 모듈과 data-rest 모듈 생성.
 
-      * rest-web 모듈에 MVC 패턴을 활용하는 REST API를 구현하기 위해 코드 추가.
+      * rest-web 모듈에 MVC 패턴을 활용하는 REST API를 구현하기.
 
         * rest-web 디렉터리 구조 맞추기.
 
         * BoardType, SocialType, Board, User, BoardRepository, UserRepository, BoardRestController, RestWebApplication 클래스 생성.
+
+### Study-Day-14
+
+* rest-web 모듈에 MVC 패턴을 활용하는 REST API를 구현하기.
+
+  * CORS 허용 및 시큐리티 설정을 위한 RestWebApplication 클래스 수정
+
+  * 커뮤니티 게시판에 생성, 삭제, 수정 연동을 위해 BoardRestController 클래스 수정
+
+* data-rest 모듈에 스프링 부트 데이터 레스트로 REST API를 구현하기.
+
+  * rest-web 모듈에서 작성했던 Board, User, SocialType, BoardType 클래스를 그대로 생성.
+
+  * BoardRepository, UserRepository 인터페이스에 @RepoistoryRestResoucre 어노테이션을 추가.
+
+  * 결과 확인
+
+    ```
+    {
+      "_embedded" : {
+        "boards" : [ 
+          {
+              "title" : "게시글 첫번째",
+              "subTitle" : "순서 첫번째",
+              "content" : "콘텐츠 첫번쨰 시바아아아아아ㅏ",
+              "boardType" : "free",
+              "createdDate" : "2019-02-01T18:40:47",
+              "updatedDate" : null,
+              "_links" : {
+                  "self" : {
+                      "href" : "http://localhost:8081/api/boards/1"
+                  },
+                  "board" : {
+                      "href" : "http://localhost:8081/api/boards/1"
+                  },
+                  "user" : {
+                      "href" : "http://localhost:8081/api/boards/1/user"
+                  }
+              }
+          },
+        ]
+      },
+      "_links" : {
+          "first" : {
+              "href" : "http://localhost:8081/api/boards?page=0&size=10"
+          },
+          "self" : {
+              "href" : "http://localhost:8081/api/boards{?page,size,sort}",
+              "templated" : true
+          },
+          "next" : {
+              "href" : "http://localhost:8081/api/boards?page=1&size=10"
+          },
+          "last" : {
+              "href" : "http://localhost:8081/api/boards?page=19&size=10"
+          },
+          "profile" : {
+              "href" : "http://localhost:8081/api/profile/boards"
+          }
+      },
+      "page" : {
+      "size" : 10,
+      "totalElements" : 200,
+      "totalPages" : 20,
+      "number" : 0
+      }
+    }
+    ```
+
+* @RepositoryRestController를 사용하여 REST API 구현하기
+
+  * @RepositoryRestController를 사용한 BoardRestController 클래스 생성.
+
+  * 결과 확인
+
+    ```
+    {
+      "_embedded" : {
+        "boards" : [ 
+          {
+            "title" : "게시글 첫번째",
+            "subTitle" : "순서 첫번째",
+            "content" : "콘텐츠 첫번쨰 시바아아아아아ㅏ",
+            "boardType" : "free",
+            "createdDate" : "2019-02-01T18:40:47",
+            "updatedDate" : null
+          },  
+        ]
+      },
+      "_links" : {
+          "self" : {
+            "href" : "http://localhost:8081/boards"
+          }
+      },
+      "page" : {
+          "size" : 10,
+          "totalElements" : 200,
+          "totalPages" : 20,
+          "number" : 0
+      }
+    }
+    ```

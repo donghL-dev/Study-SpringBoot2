@@ -462,5 +462,16 @@
 
   * RESTful의 제약 조건
 
+    * 클라이언트-서버(client-server)
+
+    * 무상태성(stateless)
+
+    * 캐시 가능(cacheabe)
+
+    * 계층화 시스템(layered system)
+
+    * 코드 온 디맨드(code on demand)
+
+    * 인터페이스 일관성(uniform interface)
 
 ---
