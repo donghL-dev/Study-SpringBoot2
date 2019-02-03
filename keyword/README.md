@@ -434,6 +434,15 @@
 ---
 
 ## Ch. 6
+
+### [용어정리 1](https://github.com/mkshin96/study-spring-boot/blob/master/%EC%9A%A9%EC%96%B4%20%EC%A0%95%EB%A6%AC/REST.md)
+
+  * Rest
+
+  * Restful
+
+  * HATEOAS
+
 ### REST
 
   * REST는 웹과 같은 분산 하이퍼미디어 시스템에서 사용하는 통신 네트워크 아키텍처로, 네트워크 아키텍처의 원리 모음이다.
