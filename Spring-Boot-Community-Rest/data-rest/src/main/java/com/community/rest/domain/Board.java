@@ -20,7 +20,7 @@ public class Board implements Serializable {
 
     @Id
     @Column
-    @GeneratedValue
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long idx;
 
     @Column

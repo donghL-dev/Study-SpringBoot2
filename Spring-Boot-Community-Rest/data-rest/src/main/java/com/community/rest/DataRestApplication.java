@@ -1,5 +1,6 @@
 package com.community.rest;
 
+import com.community.rest.event.BoardEventHandler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -21,26 +22,29 @@ import java.util.List;
 
 @SpringBootApplication
 public class DataRestApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(DataRestApplication.class, args);
     }
 
     @Configuration
-    @EnableGlobalMethodSecurity(prePostEnabled = true)
+    @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
     @EnableWebSecurity
     static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-//        @Bean
-//        InMemoryUserDetailsManager userDetailsManager() {
-//            User.UserBuilder commonUser = User.withUsername("commonUser").password("{noop}common").roles("USER");
-//            User.UserBuilder havi = User.withUsername("havi").password("{noop}test").roles("USER", "ADMIN");
-//
-//            List<UserDetails> userDetailsList = new ArrayList<>();
-//            userDetailsList.add(commonUser.build());
-//            userDetailsList.add(havi.build());
-//
-//            return new InMemoryUserDetailsManager(userDetailsList);
-//        }
+        @Bean
+        InMemoryUserDetailsManager userDetailsManager() {
+            User.UserBuilder commonUser = User.withUsername("commonUser").
+                    password("{noop}common").roles("USER");
+            User.UserBuilder havi = User.withUsername("havi").
+                    password("{noop}test").roles("USER", "ADMIN");
+
+            List<UserDetails> userDetailsList = new ArrayList<>();
+            userDetailsList.add(commonUser.build());
+            userDetailsList.add(havi.build());
+
+            return new InMemoryUserDetailsManager(userDetailsList);
+        }
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {
@@ -58,5 +62,10 @@ public class DataRestApplication {
                     .and().cors().configurationSource(source)
                     .and().csrf().disable();
         }
+    }
+
+    @Bean
+    BoardEventHandler boardEventHandler() {
+        return new BoardEventHandler();
     }
 }

@@ -1,20 +1,10 @@
 package com.community.rest.domain;
 
 import com.community.rest.domain.enums.BoardType;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -29,7 +19,7 @@ public class Board implements Serializable {
 
     @Id
     @Column
-    @GeneratedValue
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long idx;
 
     @Column
@@ -63,38 +53,6 @@ public class Board implements Serializable {
         this.createdDate = createdDate;
         this.updatedDate = updatedDate;
         this.user = user;
-    }
-
-    public Long getIdx() {
-        return idx;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getSubTitle() {
-        return subTitle;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public BoardType getBoardType() {
-        return boardType;
-    }
-
-    public LocalDateTime getCreatedDate() {
-        return createdDate;
-    }
-
-    public LocalDateTime getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public User getUser() {
-        return user;
     }
 
     public void setCreatedDateNow() {

@@ -40,7 +40,7 @@ public class BoardRestController {
     public ResponseEntity<?> postBoard(@RequestBody Board board) {
         board.setCreatedDateNow();
         boardRepository.save(board);
-        return  new ResponseEntity<>("{}", HttpStatus.CREATED);
+        return new ResponseEntity<>("{}",HttpStatus.CREATED);
     }
 
     @PutMapping("/{idx}")
