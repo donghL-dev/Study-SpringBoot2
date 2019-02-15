@@ -255,3 +255,45 @@ Study-Spring Boot 2
 ### Study-Day-15
 
   * 챕터 4부터 6까지 이해가지 않는 부분 내용들 검토 및 정리.
+
+### Study-Day-16
+
+  * 챕터 6 종료 및 챕터 4 복습 시작
+
+  * 커뮤니티 게시판 프로젝트 생성(Spring-Boot-Community-Web2)
+
+  * 프로젝트 의존성 구성
+
+    * build.gradle 수정
+
+  * 도메인 패키지 생성
+
+    * Board, User 클래스 생성
+
+  * 레포지토리 패키지 생성
+
+    * BoardRepoistory, UserRepository 인터페이스 생성
+
+  * 도메인 테스트
+
+  * 서비스 패키지 생성
+
+    * 핵심 비지니스 로직을 담당하는 BoardService 클래스 생성
+
+  * 컨트롤러 패키지 생성
+
+    * BoardController 클래스 생성
+
+      * 클라이언트로부터 요청을 받아오고 서비스로부터 데이터를 받아와 뷰를 바인딩하는 역할을 함.
+
+  * CommandLineRunner를 통한 H2 DB에 데이터 삽입
+
+  * [다양한 형식의 게시판 출력](https://github.com/dongh9508/Study-SpringBoot2/blob/master/keyword/LINK/result/Board.md)
+
+    * 페이징 형식 출력
+
+    * 페이징 형식 역순 출력
+
+    * 리스트 형식 출력
+
+    * 리스트 형식 역순 출력
