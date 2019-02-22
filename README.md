@@ -297,3 +297,8 @@ Study-Spring Boot 2
     * 리스트 형식 출력
 
     * 리스트 형식 역순 출력
+
+  * 게시판의 '#' 클릭시에 게시글의 역순출력과 정상출력이 가능하도록 구현.
+
+    * list2.html 생성, BoardController에 list2 메소드를 생성하여 /list2 url을 getmapping 으로 매핑함.
+   

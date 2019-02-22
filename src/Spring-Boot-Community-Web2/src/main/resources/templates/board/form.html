@@ -25,6 +25,7 @@
                         <option>--분류--</option>
                         <option th:value="notice" th:selected="${board?.boardType?.name() == 'notice'}">공지사항</option>
                         <option th:value="free" th:selected="${board?.boardType?.name() == 'free'}">자유게시판</option>
+                        <option th:value="kyungsung" th:selected="${board?.boardType?.name() == 'kyungsung'}">경성게시판</option>
                     </select>
                 </div>
             </td>

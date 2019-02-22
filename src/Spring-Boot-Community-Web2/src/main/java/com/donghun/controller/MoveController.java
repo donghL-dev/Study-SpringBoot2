@@ -11,27 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/board")
-public class BoardController {
+public class MoveController {
 
     @Autowired
     BoardService boardService;
 
     @GetMapping({"", "/"})
-    public String board(@RequestParam(value = "idx", defaultValue = "0") Long idx, Model model) {
-        model.addAttribute("board", boardService.findBoardByIdx(idx));
-        return "/board/form";
-    }
-
-    @GetMapping("/list")
     public String list(@PageableDefault Pageable pageable, Model model) {
         model.addAttribute("boardList", boardService.findBoardList(pageable));
         return "/board/list";
-    }
-
-    @GetMapping("/list2")
-    public String list2(@PageableDefault Pageable pageable, Model model) {
-        model.addAttribute("boardList", boardService.findBoardList2(pageable));
-        return "/board/list2";
     }
 }

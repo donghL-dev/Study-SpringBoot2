@@ -34,7 +34,7 @@ public class BootApplication {
             .title("게시글" + index)
             .subTitle("순서" + index)
             .content("콘텐츠")
-            .boardType(BoardType.free)
+            .boardType(BoardType.kyungsung)
             .createdDate(LocalDateTime.now())
             .updatedDate(LocalDateTime.now()).user(user).build())
             );

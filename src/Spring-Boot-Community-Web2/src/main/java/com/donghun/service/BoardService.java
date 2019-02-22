@@ -23,6 +23,11 @@ public class BoardService {
         return boardRepository.findAll(pageable);
     }
 
+    public Page<Board> findBoardList2(Pageable pageable) {
+        pageable = PageRequest.of(pageable.getPageNumber() <= 0 ? 0 : pageable.getPageNumber() - 1, pageable.getPageSize());
+        return boardRepository.findAllByOrderByIdxDesc(pageable);
+    }
+
     public Board findBoardByIdx(Long idx) {
         //return boardRepository.findById(idx).orElse(Board.builder().title("테스트").build());
         return boardRepository.findById(idx).orElse(new Board());
