@@ -301,4 +301,21 @@ Study-Spring Boot 2
   * 게시판의 '#' 클릭시에 게시글의 역순출력과 정상출력이 가능하도록 구현.
 
     * list2.html 생성, BoardController에 list2 메소드를 생성하여 /list2 url을 getmapping 으로 매핑함.
-   
+
+  * Web 프로젝트에 MySQL 연동.
+
+
+### Study-Day-17
+
+  * 챕터 6 복습 시작
+
+  * Spring-Boot-Community-Rest2 프로젝트 생성
+
+    * MySQL 연동 및 의존성 설정
+
+    * 포트 변경 및 프로퍼티 설정
+  
+  * CORS 허용 및 시큐리티 설정
+
+  * 생성, 수정. 삭제 구현
+
