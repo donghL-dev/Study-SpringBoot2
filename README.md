@@ -319,3 +319,23 @@ Study-Spring Boot 2
 
   * 생성, 수정. 삭제 구현
 
+
+### Study-Day-18
+
+  * 챕터 5 복습 시작
+
+  * OAuth2를 이용한 로그인 연동을 위한 소셜 네트워크 연동
+
+    * Facebook, Google, KaKao 개발자센터 연동
+
+    * client-id, client-secret 발급 및 application.yml 수정
+  
+  * User 클래스에 소셜 정보를 위한 컬럼 추가.
+
+  * 카카오 로그인 연동을 위한 CustomOAuth2Provider 클래스 생성 
+
+  * Security와 OAuth2 설정을 위한 SecurityConfig 클래스 생성
+
+  * 로그인 url 매핑을 위한 LoginController 클래스 생성
+
+  * 토큰 값을 이용하여 User 정보 저장을 위한 UserArgumentResolver 클래스 생성
