@@ -1,6 +1,8 @@
 용어정리
 ===
 ## Ch. 1, Ch. 2
+<details><summary>세부정보</summary>
+
 ### Dependency
 
   * Dependency(또는 의존성)는 코드에서 두 모둘간의 연결이라고 볼 수 있다. 객체 지향 언어에서는 두 클래스간의 관계라고도 말한다.
@@ -188,9 +190,14 @@
 ### h2
 
   * Java로 작성된 인 메모리 RDBMS
+
+</details>
+
 ---
 
 ## Ch. 3
+<details><summary>세부정보</summary>
+
 ### JUnit
 
   * xUnit이라고 하는 단위 테스트 프레인워크의 자바 구현물이다.
@@ -240,9 +247,14 @@
   * JSON 테스트를 지원하는 어노테이션.
 
   * @JsonTest 어노테이션은 JSON의 직렬화와 역질렬화를 수행하는 라이브러리인 Gson과 Jackson API 테스트를 제공한다. 
+
+</details>
+
 ---
 
 ## Ch. 4
+<details><summary>세부정보</summary>
+
 ### [MVC 패턴](https://github.com/ber01/Study-Spring-Boot/tree/master/keyword/MVC)
 
   * MVC 패턴에 Service가 필요한 이유
@@ -292,9 +304,14 @@
   * @PageableParam
   * @PageableDefault
   * @Bean
+
+</details>
+
 ---
 
 ## Ch. 5
+<details><summary>세부정보</summary>
+
 ### 스프링 부트 시큐리티
 
 * 스프링 부트 시큐리티는 스프링 시큐리티의 번거로운 설정을 간소화 시켜주는 래핑 프레임워크다.
@@ -431,9 +448,12 @@
   
   * UserInfoTokenService
  
+</details>
+
 ---
 
 ## Ch. 6
+<details><summary>세부정보</summary>
 
 ### [용어정리 1](https://github.com/mkshin96/study-spring-boot/blob/master/%EC%9A%A9%EC%96%B4%20%EC%A0%95%EB%A6%AC/REST.md)
 
@@ -488,4 +508,16 @@
   * 모델 클래스의 컬럼 필드에 @JsonIgnore 어노테이션을 사용할 경우, 해당 필드가 반환값에 포함되지 않는다. 
 
   * 비밀번호와 같이 반환값으로 포함되서 노출되어서는 안될 필드인 경우, @JsonIgnore를 사용해주면 적절하다. 
+
+### @Autowired를 쓰지않고 레포지토리를 서비스 클래스에서 사용하는 방법.
+
+  ```java
+  private final AccountRepository accountRepository;
+    
+  public AccountService(AccountRepository accountRepository) {
+      this.accountRepository = accountRepository;
+  }
+  ```
+</details>
+
 ---
